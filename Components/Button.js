@@ -28,10 +28,28 @@ import { COLORS,SIZES,FONTS,SHADOWS } from '../constants'
   )
 }
 
-export const RectButton = () => {
+export const RectButton = ({minWidth,fontSize,handlePress,...props}) => {
     return (
-      <View>
-        <Text>||</Text>
-      </View>
+      <TouchableOpacity
+      style={{
+        backgroundColor:COLORS.primary,
+        borderRadius:SIZES.extraLarge,
+        minWidth:minWidth,
+        padding:SIZES.small,
+        ...props,
+      }}
+      onPress={handlePress}
+    >
+      <Text style={{
+        fontFamily:FONTS.semiBold,
+        fontSize:fontSize,
+        color:"blue",
+        textAlign:'center'
+      }}>
+        place a Bid
+      </Text>
+
+
+    </TouchableOpacity>
     )
   }

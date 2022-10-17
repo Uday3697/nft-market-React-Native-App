@@ -7,7 +7,8 @@ import { NFTCard,HomeHeader,FocusedStatusBar } from '../Components'
 import { View } from 'react-native'
 
 
-const Home = () => {
+const Home = ({ navigation }) => {
+  console.log( "hiiiiiiiiiiii" ,navigation );
   return (
    <SafeAreaView style={{flex:1}}>
       <FocusedStatusBar background={COLORS.primary} />
@@ -15,7 +16,7 @@ const Home = () => {
         <View style={{zIndex:0}}>
           <FlatList 
             data={NFTData}
-            renderItem={({item})=><NFTCard data={item}/>}
+            renderItem={({item})=><NFTCard data={item} navigation={ navigation } />}
             keyExtractor={(item)=>item.id}
             showsHorizontalScrollIndicator={false}
             ListHeaderComponent={<HomeHeader/>}

@@ -1,5 +1,6 @@
 import assets from "./assets";
 
+
 const NFTData = [
   {
     id: "NFT-01",
