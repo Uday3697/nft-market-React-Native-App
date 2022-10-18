@@ -43,7 +43,7 @@ export const RectButton = ({minWidth,fontSize,handlePress,...props}) => {
       <Text style={{
         fontFamily:FONTS.semiBold,
         fontSize:fontSize,
-        color:"blue",
+        color:"skyblue",
         textAlign:'center'
       }}>
         place a Bid

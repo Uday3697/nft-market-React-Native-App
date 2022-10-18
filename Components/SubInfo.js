@@ -21,11 +21,7 @@ export const EthPrice = ({price}) => {
         resizeMode="contain"
         style={{width:20,height:20,marginRight:2}}
         />
-        <Text 
-        style={{fontFamily:FONTS.medium,fontSize:SIZES.font,color:COLORS.primary}}
-        >
-            {price}
-        </Text>
+        <Text style={{fontFamily:FONTS.medium,fontSize:SIZES.font,color:COLORS.primary}}> {price}</Text>
       </View>
     )
   } 

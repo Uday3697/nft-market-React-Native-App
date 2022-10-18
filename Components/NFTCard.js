@@ -10,7 +10,7 @@ import { RectButton } from '../Components/Button'
 const NFTCard =({data ,navigation}) => {
   return (
     <View style={{
-      backgroundColor:"lightblue",
+      backgroundColor:"white",
       borderRadius:SIZES.font,
       marginBottom:SIZES.extraLarge,
       margin:SIZES.base,
@@ -42,7 +42,7 @@ const NFTCard =({data ,navigation}) => {
          subTitleSize={SIZES.small}
          />
          <View style={{ marginTop:SIZES.font,flexDirection:"row",justifyContent:"space-between", alignItems:'center'}}>
-            <EthPrice EthPrice={data.price}/>
+            <EthPrice price={data.price}/>
             <RectButton 
               minWidth={120}
               fontSize={SIZES.font}

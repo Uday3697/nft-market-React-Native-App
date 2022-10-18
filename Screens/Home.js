@@ -8,7 +8,7 @@ import { View } from 'react-native'
 
 
 const Home = ({ navigation }) => {
-  console.log( "hiiiiiiiiiiii" ,navigation );
+  
   return (
    <SafeAreaView style={{flex:1}}>
       <FocusedStatusBar background={COLORS.primary} />
